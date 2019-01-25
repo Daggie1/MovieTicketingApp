@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/animation_list"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/loginlenear"
+    tools:context=".ui.activities.Auth.Login">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+
+         android:id="@+id/coverImageView"
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:layout_gravity="center"
+         android:src="@drawable/logo"
+         android:scaleType="centerCrop"
+         />-->
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/emaillayout"
+        android:textColorHint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatEditText
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"
+            android:hint="EMail"
+            android:id="@+id/signupemailedittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="16dp"
+        android:id="@+id/pwdlayout"
+        android:textColorHint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <android.support.v7.widget.AppCompatEditText
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:hint="Enter Your Password"
+            android:id="@+id/signuppwdedittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/signupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="SignUp"
+        android:background="@color/popularmovies_primary_dark"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR Already have an Account"/>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/signuplogintxt"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/signupProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

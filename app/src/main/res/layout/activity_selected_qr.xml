@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.activities.SelectedQr">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/qrNametxt"
+        android:layout_width="match_parent"
+        android:text="could be null"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/showqr_imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/fromOrtoHomeBtn"
+        android:layout_marginTop="23dp"
+        android:text="Back to Home"
+        android:textColor="@color/white"
+        android:background="@color/popularmovies_primary_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

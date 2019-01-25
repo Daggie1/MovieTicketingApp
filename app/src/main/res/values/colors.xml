@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="popularmovies_light">#81D4FA</color>
+    <color name="popularmovies_primary">#0277BD</color>
+    <color name="popularmovies_primary_dark">#01579B</color>
+    <color name="red">#fe485a</color>
+    <color name="green">#21c70f</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+
+
+
+    <color name="purple_500">#4c50ba</color>
+    <color name="deep_purple_500">#1717c9</color>
+    <color name="indigo_500">#081246</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="light_blue_500">#03A9F4</color>
+
+</resources>

@@ -1,0 +1,10 @@
+.gradle
+.jar
+content_provider_generator/*.jar
+.idea
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures

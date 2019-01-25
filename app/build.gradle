@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.franktan.popularmovies"
+
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        resValue "string", "moviedb_api_key", System.getenv("MOVIEDB_API_KEY")
+        //"3245bd03049568e785c2ba7389fa5de3"
+        //resValue "string", "google_api_key", System.getenv("GOOGLE_API_KEY")
+        //"AIzaSyBnUlg-Auzzuc-gM4yh0y3TMP9zTNeTTe8"
+        //google_api_key
+    }
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+
+    buildTypes {
+        debug {
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
+    implementation 'com.google.firebase:firebase-database:11.6.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.3.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.5.2'
+//daraja api
+    implementation 'com.androidstudy:daraja:1.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+//countryCode picker
+    implementation 'io.michaelrocks:libphonenumber-android:8.8.5'
+    implementation 'com.github.joielechong:countrycodepicker:2.1.8'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    androidTestImplementation 'org.mockito:mockito-core:1.10.19'
+    androidTestImplementation 'com.google.dexmaker:dexmaker:1.2'
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.2'
+}
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+apply plugin: 'com.google.gms.google-services'

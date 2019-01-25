@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="com.franktan.popularmovies.ui.activities.Theatre">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs442.dsuraj.quantumc.Theatre"
+    android:background="@color/white">
+
+
+
+    <!--<Button
+        android:text="Regal Cinemas                                               5.8 miles"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:text="Land Mark Century                                     8.0 miles"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button3"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="AMC Dine In Theatre                                    9.2 miles"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary" />-->
+    <ImageView
+        android:id="@+id/movie_poster_real_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_event_black_18dp"
+        android:layout_marginBottom="8dp"/>
+    <LinearLayout
+        android:id="@+id/movieNameLayout"
+        android:layout_below="@+id/movie_poster_real_imageview"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/realMovieNametetxt"
+
+        android:text="movie Name"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_marginRight="8dp"
+
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+
+            android:id="@+id/subtractTicketsBtn"
+            android:src="@drawable/left_chev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketsNotxt"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:id="@+id/addTicketsBtn"
+            android:src="@drawable/right_chev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:text="02:15 PM"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/AMC2"
+
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:background="@color/popularmovies_primary"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="7:15 PM"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/AMC4"
+        android:background="@color/popularmovies_primary"
+        android:layout_below="@+id/button9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="9:15 PM"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/AMC5"
+        android:background="@color/popularmovies_primary"
+        android:layout_alignTop="@+id/AMC4"
+        android:layout_alignStart="@+id/AMC2"
+        android:layout_alignLeft="@+id/AMC2"/>
+
+    <Button
+        android:text="12:05 PM"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/RC1"
+        android:background="@color/popularmovies_primary"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="4:15 PM"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignEnd="@+id/AMC5"
+        android:layout_alignRight="@+id/AMC5"
+
+        android:id="@+id/RC2"
+       android:background="@color/popularmovies_primary"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="7:05 PM"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/RC3"
+        android:background="@color/popularmovies_primary"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="05:30 PM"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/AMC3"
+        android:background="@color/popularmovies_primary"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="9:15 PM"
+        android:layout_width="wrap_content"
+        android:id="@+id/RC4"
+        android:background="@color/popularmovies_primary"
+        android:layout_below="@+id/RC1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp" />
+
+    <Button
+        android:text="2:45 PM"
+        android:layout_width="wrap_content"
+        android:id="@+id/LMC2"
+        android:background="@color/popularmovies_primary"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/RC2"
+        android:layout_alignLeft="@+id/RC2"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="7:05 PM"
+        android:layout_width="wrap_content"
+        android:id="@+id/LMC4"
+        android:background="@color/popularmovies_primary"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/LMC1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="30dp" />
+
+    <Button
+        android:text="9:15 PM"
+        android:layout_width="wrap_content"
+        android:id="@+id/LMC5"
+        android:background="@color/popularmovies_primary"
+        android:layout_alignBottom="@+id/LMC4"
+        android:layout_alignStart="@+id/LMC2"
+        android:layout_alignLeft="@+id/LMC2"
+        android:layout_alignTop="@+id/LMC4"
+        android:layout_height="30dp" />
+
+    <Button
+        android:text="11:30 PM"
+        android:layout_width="wrap_content"
+        android:id="@+id/LMC1"
+        android:background="@color/popularmovies_primary"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="4:30 PM"
+        android:layout_width="wrap_content"
+        android:id="@+id/LMC3"
+        android:background="@color/popularmovies_primary"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+    android:text="@string/chania_east_theatre_hall"
+    android:layout_width="wrap_content"
+    android:id="@+id/button"
+        android:layout_height="40dp"
+    android:textColor="@color/popularmovies_primary"
+    android:textSize="20sp"
+    android:gravity="left|center"
+
+        android:layout_below="@+id/movieNameLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="@string/chania_west_theatre_hall"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:layout_height="40dp"
+        android:textColor="@color/popularmovies_primary"
+        android:gravity="left|center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/AMC4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:text="@string/chania_north_theatre_hall"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView6"
+        android:textColor="@color/popularmovies_primary"
+        android:textSize="20sp"
+        android:gravity="left|center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/RC4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:text="11:55 AM"
+        android:layout_width="wrap_content"
+        android:id="@+id/button9"
+        android:background="@color/popularmovies_primary"
+        android:layout_height="30dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/datepickertxt"
+        android:layout_below="@+id/LMC4"
+        android:text="Select Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <DatePicker
+
+      android:id="@+id/theatredatePicker"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/datepickertxt"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/GotoPay"
+        android:layout_width="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/theatredatePicker"
+        android:layout_marginTop="8dp"
+        android:background="@color/popularmovies_primary_dark"
+        android:text="Next"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/totaltxt"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@+id/GotoPay"
+        android:layout_toEndOf="@+id/GotoPay"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:background="@color/popularmovies_primary_dark"
+        android:text="0"
+
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+<android.support.v7.widget.Toolbar
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+android:minHeight="?attr/actionBarSize"
+app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+    />
+</FrameLayout>

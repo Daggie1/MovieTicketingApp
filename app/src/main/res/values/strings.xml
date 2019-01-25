@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Chania Cinemas</string>
+
+    <string name="account_type">franktan.com</string>
+    <string name="sync_account_type">popularmovies.franktan.com</string>
+    <string name="content_authority">com.franktan.popularmovies</string>
+
+    <string name="title_activity_movie_detail">MovieDetailActivity</string>
+    <string name="movie_title">Title</string>
+    <string name="rating_example">7.8/10</string>
+    <string name="movie_backdrop_image_text">Movie Backdrop Image</string>
+    <string name="rating">Rating</string>
+    <string name="vote_count">Number of votes</string>
+    <string name="vote_count_example">100 votes</string>
+    <string name="release_date">Release Date</string>
+    <string name="release_date_example">1 Jan 2015</string>
+    <string name="original_language">Original Language</string>
+
+    <!-- Strings related to Settings -->
+    <string name="sort_order_key">sort_order</string>
+    <string name="original_language_example">en</string>
+    <string name="overview_title">Overview</string>
+    <string name="overview_example">Movie\'s overview</string>
+    <string name="movie_poster_image">Movie poster image</string>
+    <string name="author_placeholder">Author</string>
+    <string name="review_text_placeholder">Review Text</string>
+    <string name="reviews_title">Reviews</string>
+    <string name="trailers_title">Trailers</string>
+    <string name="no_reviews_available">No reviews available for this movie.</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="error_thumbnail_view"><![CDATA[<string name=\"error_thumbnail_view\">There was an error initializing the YouTubeThumbnailView (%1$s)]]></string>
+    <string name="no_trailers_available">No trailers available for this movie.</string>
+    <string name="share_title">Share</string>
+    <string name="play_button">Trailer play button</string>
+    <string name="poster_transition_element">movie_poster_transition_element</string>
+
+    <!--Bottom Navigation-->
+    <string name="title_shop">My Tickets</string>
+    <string name="title_gifts">About Us</string>
+    <string name="title_cart">Contact Us</string>
+    <!--Halls-->
+    <string name="chania_east_theatre_hall">Chania East Theatre Hall</string>
+    <string name="chania_west_theatre_hall">Chania West Theatre Hall</string>
+    <string name="chania_north_theatre_hall">Chania North Theatre Hall</string>
+    <string name="ticket_generation">Ticket Generation</string>
+
+</resources>
