@@ -10,9 +10,9 @@ This app was developed with an idea of Online Movie Ticketing:</br>
 --------to install------</br>
 1.clone the repo</br>
 2.download and open repo on android android studio</br>
-3.Create an account in <h3> The Movie DB </h3> and replace the credentials<br>
-2.Create an account in <h3> Firebase console</h3> and replace the credentials<br>
-2.Create an account in <h3> google console apis</h3> and replace the credentials<br>
+3.Create an account in  The Movie DB  and replace the credentials<br>
+2.Create an account in  Firebase console and replace the credentials<br>
+2.Create an account in  google console apis and replace the credentials<br>
   
 <h2>ScreenShots</h2>
 
